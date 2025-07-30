@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Fjalla_One } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 /*configura variaveis*/
 const roboto = Roboto({
@@ -38,15 +39,18 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${roboto.variable} ${fjallaOne.variable}`}>
         <header>
-          <h1>PetShop</h1>
+          <h1>
+            <Link href="/">PetShop</Link>
+          </h1>
           <nav>
-            <a href="/">Blog</a>
-            <a href="/produtos">Produtos</a>
-            <a href="/contato">Contato</a>
-            <a href="/sobre">Sobre</a>
+            <Link href="/">Blog</Link>
+            <Link href="/produtos">Produtos</Link>
+            <Link href="/contato">Contato</Link>
+            <Link href="/sobre">Sobre</Link>
           </nav>
         </header>
-        {children}
+
+        <main className="limitador">{children}</main>
       </body>
     </html>
   );
