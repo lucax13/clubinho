@@ -38,18 +38,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${roboto.variable} ${fjallaOne.variable}`}>
-        <header>
-          <h1>
-            <Link href="/">PetShop</Link>
-          </h1>
-          <nav>
-            <Link href="/">Blog</Link>
-            <Link href="/produtos">Produtos</Link>
-            <Link href="/contato">Contato</Link>
-            <Link href="/sobre">Sobre</Link>
-          </nav>
-        </header>
-
         <main className="limitador">{children}</main>
       </body>
     </html>
