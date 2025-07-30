@@ -20,6 +20,13 @@ const fjallaOne = Fjalla_One({
 export const metadata: Metadata = {
   title: "PetShop",
   description: "Mini portal de Petshop com noticias, produtos e muito mais",
+  keywords: ["petshop", "cachorros", "gatos"],
+  authors: [
+    {
+      name: "Lucas",
+      url: "https://github.com/lucax13",
+    },
+  ],
 };
 
 export default function RootLayout({
