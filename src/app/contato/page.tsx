@@ -1,8 +1,8 @@
 export default function Homes() {
   return (
     <section>
-      <h2>Pet Notícias</h2>
-      <p>Notícias do mundo dos pets</p>
+      <h2>Contato</h2>
+      <p>Nossas plataformas para contato:</p>
     </section>
   );
 }
