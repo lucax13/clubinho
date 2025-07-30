@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 export default function Homes() {
   return (
     <section>
@@ -6,3 +8,7 @@ export default function Homes() {
     </section>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Sobre",
+};
