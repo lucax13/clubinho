@@ -1,5 +1,9 @@
 import { Metadata } from "next";
 
+export const meadata: Metadata = {
+  title: "Produtos | PetShop",
+};
+
 export default function Homes() {
   return (
     <section>
@@ -8,7 +12,3 @@ export default function Homes() {
     </section>
   );
 }
-
-export const meadata: Metadata = {
-  title: "Produtos",
-};
